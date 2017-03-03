@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiles</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <h1>Top Tiles</h1>
+    <p class="hText">Custom tiles made with love!</p>
+    <div class="wrapper">
+        <div class="pageLeft">
+            <div id="greeting" class="message"></div>
+            <table>
+              <tr>
+                <td>Custom tile: </td>
+                <td id="userSign"></td>
+              </tr>
+              <tr>
+                <td>Total tiles: </td>
+                <td id="tiles"></td>
+              </tr>
+              <tr>
+                <td>Subtotal: </td>
+                <td id="subTotal">$</td>
+              </tr>
+              <tr>
+                <td>Shipping: </td>
+                <td id="shipping">$</td>
+              </tr>
+              <tr>
+                <td>Grand total: </td>
+                <td id="grandTotal">$</td>
+              </tr>
+            </table>
+            <div class="payForm">
+            <form>
+                <h3>Payment information</h3>
+                <h5>Name on credit card</h5>
+                <input type="text" value="Marko Markovic" class="cardName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Marko Markovic';}" required="">
+
+                <h5>Credit card number</h5>
+                <input type="text" value="555-555" class="cardLogo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '555-555';}" required="">
+                <p><span></span>Your credit card information is encrypted.</p>
+
+                <h5>Expires on</h5>
+                <select class="monthBox">
+                    <option value="null">January</option>
+                    <option value="null">February</option>
+                    <option value="AX">March</option>
+                    <option value="AX">April</option>
+                    <option value="AX">May</option>
+                    <option value="AX">June</option>
+                    <option value="AX">July</option>
+                    <option value="AX">August</option>
+                    <option value="AX">September</option>
+                    <option value="AX">October</option>
+                    <option value="AX">November</option>
+                    <option value="AX">December</option>
+                </select>
+                <input type="number" class="yearBox" type="text" value="2018" min="2010" max="2020" />
+            </form>
+            </div>
+        </div>
+        <a href="#" class="action">Pay Now</a>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
